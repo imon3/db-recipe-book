@@ -8,8 +8,6 @@ exports.up = function (knex, Promise) {
             .string('dish_name', 128)
             .notNullable()
             .unique()
-            .onDelete('CASCADE')
-            .onUpdate('CASCADE')
 
         tbl
             .timestamps(true, true)
